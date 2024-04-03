@@ -13,42 +13,28 @@ async function execute() {
 
     cAscii = c.charCodeAt(0);
 
-    switch (cAscii) {
-        case 65 :
-            console.log("The letter is vowel.");
-            break;
-        case 97:
-            console.log("The letter is vowel.");
-            break;
-        case 79:
-            console.log("The letter is vowel.");
-            break;
-        case 111:
-            console.log("The letter is vowel.");
-            break;
-        case 85:
-            console.log("The letter is vowel.");
-            break;
-        case 117:
-            console.log("The letter is vowel.");
-            break;
-        case 73:
-            console.log("The letter is vowel.");
-            break;
-        case 105:
-            console.log("The letter is vowel.");
-            break;
-        case 69:
-            console.log("The letter is vowel.");
-            break;
-        case 101:
-            console.log("The letter is vowel.");
-            break;
-        default:
-            console.log("The letter is constant.");
-            break;
+    if (((65 <= cAscii) && (cAscii <= 90)) || ((97 <= cAscii) && (cAscii <= 122))) {
+        switch (cAscii) {
+            case 65 :
+            case 97:
+            case 111:
+            case 85:
+            case 117:
+            case 73:
+            case 105:
+            case 69:
+            case 101:
+            case 79:
+                console.log("The letter is vowel.");
+                break;
+            default:
+                console.log("The letter is constant.");
+                break;
 
-        // Ende von eurem Code
+            // Ende von eurem Code
+        }
+    } else {
+        console.log("You have entered a character which is not letter.")
     }
 }
 

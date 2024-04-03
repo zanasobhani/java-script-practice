@@ -8,10 +8,10 @@ async function execute() {
 
     let fN = await prompt("Please enter your number: ");
 
+    fN = parseFloat(fN);
+    let r = (fN - Math.floor(fN)) !== 0;
 
-    fN = parseInt(fN);
-
-    if (0 < fN < 1) {
+    if (r===true) {
         console.log("The number is decimal.");
     } else if (fN % 2 !== 0) {
         console.log("The number is odd.")
