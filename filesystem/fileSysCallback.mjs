@@ -15,7 +15,10 @@ readFile("data.json", "utf8", async (err, data) => {
             myData = JSON.parse(data);
         }
     } else {
-        myData = JSON.parse(data);
+        if (data.length == 0)
+            myData = [];
+        else
+            myData = JSON.parse(data);
     }
 });
 
