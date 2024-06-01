@@ -29,7 +29,7 @@ async function execute() {
     const column = await prompt("Enter column name of table :");
 
 
-    let rowNr = parseInt(row)-1;
+    const rowNr = parseInt(row)-1;
 
 
     switch (column) {

@@ -16,8 +16,8 @@ async function execute() {
     const row = await prompt("Enter row of table :");
     const column = await prompt("Enter column of table :");
 
-    let rowNr = parseInt(row);
-    let columnNr = parseInt(column) - 1;
+    const rowNr = parseInt(row);
+    const columnNr = parseInt(column) - 1;
     console.log(myTable[rowNr][columnNr]);
     // Ende von eurem Code
 }
